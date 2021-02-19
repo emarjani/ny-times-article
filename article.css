@@ -24,3 +24,24 @@ header {
     min-width: 200px;
     max-width: 650px;
 }
+
+.end-tag{
+    border: 1px purple solid;
+    /* display: flex; */
+}
+
+.mini-aside {
+    border: 1px yellow solid;
+}
+
+.main-aside {
+    border: 3px orange solid;
+}
+
+.end-section {
+    border: 2px pink solid;
+}
+
+footer {
+    border: 3px green solid;
+}
