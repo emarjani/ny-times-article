@@ -1,3 +1,9 @@
+
+.title-img {
+    max-height: 70%;
+    max-width: 70%;
+}
+
 header {
     background-color: rgb(154, 218, 154);
     display: flex;
@@ -8,6 +14,25 @@ header {
     display:flex;
     border: 1px red solid;
 }
+
+/* title container */
+.title-container{
+    border: 2px blue solid;
+    padding: 10px 20px 10px 20px;
+}
+
+.title-container hr {
+    width: 100%;
+}
+
+.title-container img {
+    width: 300px;
+    /* width: 65%;
+    height: 65%; */
+}
+
+
+/* main content */
 
 .main-content {
     border: 3px yellow solid;
@@ -38,10 +63,58 @@ header {
     border: 3px orange solid;
 }
 
+/* end section & links */
+
 .end-section {
-    border: 2px pink solid;
+    border: 3px pink solid;
+    margin-left: 5%;
+    margin-right: 5%;
 }
+
+.end-section .header {
+    border: 1px blue solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+#home-page-link {
+    border: 1px black solid;
+    display:flex;
+    align-items: center;
+}
+
+.end-section .links {
+    border: 3px red solid;
+    display: grid;
+    grid-template-columns: repeat(5, 2fr) 3fr;
+    /* justify-items: end;  */
+}
+.end-section .links section {
+    border: 1px blue dashed;
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; */
+    width: 150px;
+}
+
+.links-1 {
+    font-size: 14px;
+    border: 1px pink dashed;
+    display: flex;
+    flex-direction: column;
+}
+
+/* footer */
 
 footer {
     border: 3px green solid;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 20px;
+}
+
+footer a {
+    font-size: 13px;
+    margin-left: 10px;
 }
