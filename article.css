@@ -1,8 +1,27 @@
 
+iframe {
+    min-width: 100%;
+}
+
+/* IMAGES */
 .title-img {
+    border: 2px blue solid;
     max-height: 70%;
     max-width: 70%;
 }
+
+.title-img img {max-width: 100%}
+
+.title-img p {
+    max-width: 100%;
+}
+
+.bicep2-img {
+    min-width: 200px;
+    max-width: 650px;
+}
+
+/* HEADER STYLING */
 
 header {
     background-color: rgb(154, 218, 154);
@@ -13,6 +32,7 @@ header {
 .header-buttons{
     display:flex;
     border: 1px red solid;
+    
 }
 
 /* title container */
@@ -59,10 +79,65 @@ header {
     border: 1px yellow solid;
 }
 
+/* main aside */
+
 .main-aside {
     border: 3px orange solid;
+    display: flex;
+    margin: 5% 5% 5% 5%;
 }
 
+.related-posts {
+    border: 4px blue solid;
+    display: grid;
+    grid-template-rows: 1fr 1.5fr 1fr;
+}
+
+.related-post-container {
+    /* HEADLINE AND IMGS */
+    border: 3px purple dotted;
+    display: flex;
+    flex-direction: column;
+}
+
+.related-post-imgs {
+    border: 2px green solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* justify-content:flex-end; */
+}
+
+.related-post-imgs img {
+    max-width: 270px;
+    max-height: 250px;
+}
+
+.related-post-container .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* MOST POPULAR SECTION */
+
+.most-popular-section{
+    border: 2px purple dashed;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    font-size: 21px;
+}
+
+.most-popular-section a {
+    padding-top: 1em;
+}
+
+
+
+/*
+
+
+.. */
 /* end section & links */
 
 .end-section {
@@ -91,9 +166,6 @@ header {
 }
 .end-section .links section {
     border: 1px blue dashed;
-    /* display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; */
     width: 150px;
 }
 
