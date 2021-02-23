@@ -1,13 +1,18 @@
-
-iframe {
-    min-width: 100%;
+body {
+    margin: 0;
+    padding: 0;
 }
 
-/* IMAGES */
+
+/* MEDIA */
 .title-img {
     border: 2px blue solid;
     max-height: 70%;
     max-width: 70%;
+}
+
+iframe {
+    min-width: 100%;
 }
 
 .title-img img {max-width: 100%}
@@ -27,7 +32,8 @@ iframe {
 header {
     background-color: rgb(154, 218, 154);
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
+    align-items: center;   
 }
 
 .header-buttons{
@@ -35,6 +41,18 @@ header {
     border: 1px red solid;
     
 }
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    height: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 
 /* title container */
 .title-container{
@@ -110,14 +128,12 @@ article {
 }
 
 .row1 {top: 25%; padding: 5px}
-
 #para-1{left: 0%}
 #para-2{left: 25%}
 #para-3{left: 50%}
 #para-4{left: 75%}
 
 .row2 {bottom: 0%}
-
 #para-5{left: 0%}
 #para-6{left: 25%}
 #para-7{left: 50%}
@@ -171,14 +187,21 @@ article {
 .related-post-imgs {
     border: 2px green solid;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    /* justify-content:flex-end; */
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .related-post-imgs img {
     max-width: 270px;
     max-height: 250px;
 }
+
+/* .related-post-imgs div {
+    border: 2px grey solid;
+    margin-left: 10px;
+    
+} */
+
+
 
 .related-post-container .header {
     display: flex;
@@ -189,6 +212,7 @@ article {
 /* MOST POPULAR SECTION */
 
 .most-popular-section{
+    background-color: yellow;
     border: 2px purple dashed;
     display: flex;
     flex-direction: column;
@@ -199,6 +223,10 @@ article {
 .most-popular-section a {
     padding-top: 1em;
 }
+/* 
+.most-popular-section hr{
+    color: black;
+} */
 
 
 
@@ -229,12 +257,17 @@ article {
 .end-section .links {
     border: 3px red solid;
     display: grid;
-    grid-template-columns: repeat(5, 2fr) 3fr;
+    grid-template-columns: repeat(6, 1fr);
     /* justify-items: end;  */
 }
 .end-section .links section {
     border: 1px blue dashed;
-    width: 150px;
+    min-width: 170px;
+}
+
+.subscribe, .versions{
+    display: flex;
+    flex-direction: column;
 }
 
 .links-1 {
@@ -243,6 +276,8 @@ article {
     display: flex;
     flex-direction: column;
 }
+
+
 
 /* footer */
 
