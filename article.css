@@ -3,6 +3,10 @@ body {
     padding: 0;
 }
 
+:root {
+    --lightgrey-border: 1px rgb(216, 216, 216) solid;
+}
+
 a {text-decoration: none;}
 
 .nyt-font{
@@ -37,7 +41,6 @@ iframe {
     max-width: 650px;
 }
 
-
 /* HEADER STYLING */
 
 header {
@@ -51,17 +54,13 @@ header {
     z-index: 1;
 }
 
-header h1 {
-    font-size: 20px;
-    /* padding: 0; */
-}
+header h1 {font-size: 20px;}
 
 .header-buttons button{
     height: 35px;
     background-color: rgb(74, 115, 133);
     color: white;
     margin: 3px 5px 3px 5px;
-    /* padding: 2px 2px 2px 2px; */
     border: none;
     border-radius: 4px;
 }
@@ -79,21 +78,9 @@ header img {
 
 
 /* title container */
-.title-container{
-    padding: 10px 20px 10px 20px;
-}
+.title-container{padding: 10px 20px 10px 20px;}
 
-.title-container h1 {
-    font-family: -apple-system-body;
-}
-
-.title-container hr {
-    width: 100%;
-}
-
-.title-container img {
-    width: 300px;
-}
+.title-container hr {width: 100%;}
 
 /* main content */
 
@@ -104,7 +91,6 @@ header img {
     align-items: center;
 }
 
-
 article {
     display: flex;
     flex-direction: column;
@@ -112,9 +98,7 @@ article {
     min-width: 80%;
 }
 
-.article-credits {
-    width: 650px;
-}
+.article-credits {width: 650px;}
 
 .article-credits p {
     font-size: 14px;
@@ -140,9 +124,7 @@ article {
     /* same width as article */
 }
 
-.infographic-grid {
-    position: relative;
-}
+.infographic-grid {position: relative;}
 
 .infographic-grid img {
     width: 100%;
@@ -156,22 +138,11 @@ article {
 }
 
 .row1 {top: 25%;}
-#para-1{left: 0%}
-#para-2{left: 25%}
-#para-3{left: 50%}
-#para-4{left: 75%}
-
 .row2 {top: 75%}
-#para-5{left: 0%}
-#para-6{left: 25%}
-#para-7{left: 50%}
-#para-8{left: 75%}
-
-
-/* ____________________ */ 
-
-/* .end-tag{
-    /* border: 2px purple solid; */
+#para-1, #para-5 {left: 0%}
+#para-2, #para-6 {left: 25%}
+#para-3, #para-7 {left: 50%}
+#para-4, #para-8 {left: 75%}
 
 .end-tag p {
     font-size: 11px;
@@ -194,10 +165,6 @@ article {
     font-weight: 600;
     border-radius: 5px;
 }
-
-
-/* mini aside */
-
 
 /* main aside */
 
@@ -222,7 +189,6 @@ article {
 .related-post-container .section-title,
 .most-popular-section .section-title {
     font-size: 16px;
-    
 }
 
 .section-title {
@@ -236,29 +202,19 @@ article {
     grid-gap: 12px;
 }
 
-.related-post-imgs > div {
-    max-width: 270px;
-}
-
 .related-post-imgs img {
     max-width: 270px;
     max-height: 250px;
 }
 
 #suggested-imgs > div {
-    border: 1px rgb(216, 216, 216) solid;
+    border: var(--lightgrey-border);
     padding: 10px 10px 10px 10px;
     position: relative;
     min-height: 280px;
 }
 
-#suggested-imgs > div:hover{
-    box-shadow: 1px 1px 4px rgb(167, 167, 167);
-}
-
-/* #suggested-imgs .text-container {
-    /* border: 2px pink solid; */
-
+#suggested-imgs > div:hover{box-shadow: 1px 1px 4px rgb(167, 167, 167);}
 
 .text-container p {margin: 3px;}
 .text-container p:nth-child(1){
@@ -272,9 +228,7 @@ article {
     font-size: 16px;
 }
 
-#suggested-imgs .text{
-    font-family: arial;
-}
+#suggested-imgs .text{font-family: arial;}
 
 #suggested-imgs a{
     position: absolute;
@@ -322,9 +276,7 @@ article {
     min-width: 300px;
 }
 
-.most-popular-section .section-title {
-    margin-bottom: 15px;
-}
+.most-popular-section .section-title {margin-bottom: 15px;}
 
 .most-popular-section a {
     padding-top: 1em;
@@ -336,21 +288,18 @@ article {
     border-top: 1px rgb(216, 216, 216) solid;
 }
 
-.most-popular-section a:hover {
-    color: grey;
-}
+.most-popular-section a:hover {color: grey;}
 
-
-/*
-
-
-.. */
 /* end section & links */
 
-.end-section {
-    margin-left: 5%;
-    margin-right: 5%;
+.end-links a,
+.other-links a,
+.versions a {
+    margin: 3px 0 5px 0;
+    color: black;
 }
+
+.end-section {margin: 0 5% 0 5%;}
 
 .end-section .header {
     border-top: 1px rgb(216, 216, 216) solid;
@@ -358,9 +307,7 @@ article {
     justify-content: space-between;
 }
 
-.end-section .header h2 {
-    font-size: 18px;
-}
+.end-section .header h2 {font-size: 18px;}
 
 #home-page-link {
     font-size: 12px;
@@ -373,9 +320,7 @@ article {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
 }
-.end-section .links section {
-    min-width: 170px;
-}
+.end-section .link-container {min-width: 170px;}
 
 .subscribe, .versions{
     display: flex;
@@ -395,31 +340,18 @@ article {
 }
 
 .end-links a {
-    color: black;
     font-family: arial;
     font-size: 13px;
-    margin: 3px 0 5px 0;
 }
 
-.end-links a:hover{
-    text-decoration-line: underline;
-}
-
+.end-links a:hover{text-decoration-line: underline;}
 
 .subscribe {
     border-left: 1px rgb(216, 216, 216) solid;
     padding-left: 15px;
-    
 }
 
-.subscribe h3 {
-    margin-top: 8px;
-    margin-bottom: 0;
-}
-
-.subscribe a {
-    color: black;
-}
+.subscribe h3 {margin-top: 8px;}
 
 .bold-links {
     display: flex;
@@ -430,26 +362,17 @@ article {
 
 .bold-links a{
     margin: 10px 0 10px 0;
+    color: black;
 }
 
 .other-links {
     display: flex;
     flex-direction: column;
-    
-}
-
-.other-links a {
-    margin: 3px 0 5px 0;
-}
-
-.versions a {
-    color: black;
-    margin: 3px 0 5px 0;
 }
 
 .versions {
-    border-left: 1px rgb(216, 216, 216) solid;
-    border-top: 1px rgb(216, 216, 216) solid;
+    border-left: var(--lightgrey-border);
+    border-top: var(--lightgrey-border);
     padding-left: 15px;
 }
 
@@ -461,7 +384,7 @@ article {
 /* footer */
 
 footer {
-    border-top: 1px rgb(216, 216, 216) solid;
+    border-top: var(--lightgrey-border);
     display: flex;
     justify-content: center;
     align-content: center;
