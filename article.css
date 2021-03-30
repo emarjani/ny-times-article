@@ -10,7 +10,7 @@ body {
 a {text-decoration: none;}
 
 .nyt-font{
-    font-family: "Rye";
+    font-family: "Abril Fatface";
     font-weight: 200;
 }
 
@@ -50,7 +50,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    box-shadow: 1px 2px 4px #797777;
+    box-shadow: 1px 2px 2px #e7e6e6;
     z-index: 1;
 }
 
@@ -79,7 +79,6 @@ header img {
 
 /* title container */
 .title-container{padding: 10px 20px 10px 20px;}
-
 .title-container hr {width: 100%;}
 
 /* main content */
@@ -391,6 +390,7 @@ footer {
     margin-bottom: 20px;
     width:fit-content;
     margin: 0 auto;
+    margin-top: 1rem;
     padding: 10px 0 40px 0;
 }
 
